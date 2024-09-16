@@ -9,6 +9,6 @@ describe('App tests', () => {
       screen.getByRole('heading', {
         level: 1,
       }),
-    ).toHaveTextContent('Vite + React')
+    ).toHaveTextContent('Find Poetry')
   })
 })
