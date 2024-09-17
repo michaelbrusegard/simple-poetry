@@ -35,9 +35,10 @@ export default function HomePage() {
           value={selectedAuthor}
           onChange={(e) => setSelectedAuthor(e.target.value)}
         >
-          <SelectOption value='shakespeare'>Shakespeare</SelectOption>
-          <SelectOption value='dickinson'>Dickinson</SelectOption>
           <SelectOption value='blake'>Blake</SelectOption>
+          <SelectOption value='dickinson'>Dickinson</SelectOption>
+          <SelectOption value='rossetti'>Rossetti</SelectOption>
+          <SelectOption value='shakespeare'>Shakespeare</SelectOption>
           <SelectOption value='whitman'>Whitman</SelectOption>
         </Select>
       </header>

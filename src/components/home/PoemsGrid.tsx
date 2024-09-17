@@ -1,18 +1,7 @@
 import styles from './PoemsGrid.module.css'
 import { useSuspenseQuery } from '@tanstack/react-query'
-import {
-  Card,
-  CardHeader,
-  CardContent,
-  CardFooter,
-  CardTitle,
-} from '../ui/Card'
-
-type Poem = {
-  title: string
-  author: string
-  linecount: number
-}
+import { PoemCard } from './PoemCard'
+import { Poem } from './types'
 
 function PoemsGrid({
   searchTerm,
@@ -51,13 +40,7 @@ function PoemsGrid({
   return (
     <div className={styles.grid}>
       {poems.data.map((poem: Poem) => (
-        <Card className={styles.card} key={poem.title}>
-          <CardHeader>
-            <CardTitle>{poem.title}</CardTitle>
-          </CardHeader>
-          <CardContent>{poem.author}</CardContent>
-          <CardFooter>{poem.linecount} lines</CardFooter>
-        </Card>
+        <PoemCard key={poem.title} poem={poem} />
       ))}
     </div>
   )
