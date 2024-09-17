@@ -3,6 +3,7 @@ import { Suspense, useState } from 'react'
 import { Input } from '../../components/ui/Input'
 import { Select, SelectOption } from '../../components/ui/Select'
 import { PoemsGrid } from '../../components/home/PoemsGrid'
+import { PoemsGridSkeleton } from '../../components/home/PoemsGridSkeleton'
 
 export default function HomePage() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -27,7 +28,7 @@ export default function HomePage() {
           <SelectOption value='whitman'>Whitman</SelectOption>
         </Select>
       </header>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PoemsGridSkeleton />}>
         <PoemsGrid searchTerm={searchTerm} selectedAuthor={selectedAuthor} />
       </Suspense>
     </>
