@@ -24,7 +24,9 @@ function PoemCard({
           <CardTitle>{poem.title}</CardTitle>
         </CardHeader>
         <CardContent>{poem.author}</CardContent>
-        <CardFooter>{poem.linecount} lines</CardFooter>
+        {poem.linecount ? (
+          <CardFooter>{poem.linecount} lines</CardFooter>
+        ) : null}
       </Card>
     </Link>
   )

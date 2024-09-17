@@ -1,7 +1,7 @@
 type Poem = {
   title: string
   author: string
-  linecount: number
+  linecount?: number
 }
 
 export type { Poem }
