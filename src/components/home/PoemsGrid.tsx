@@ -1,7 +1,7 @@
 import styles from './PoemsGrid.module.css'
 import { useSuspenseQuery } from '@tanstack/react-query'
 import { PoemCard } from './PoemCard'
-import { Poem } from './types'
+import { PoemProps } from '../../types'
 
 function PoemsGrid({
   searchTerm,
@@ -28,18 +28,16 @@ function PoemsGrid({
   })
 
   if (poems.error) {
-    return (
-      <div className={styles.errorMessage}>Error: {poems.error.message}</div>
-    )
+    return <p className={styles.errorMessage}>Error: {poems.error.message}</p>
   }
 
   if (!Array.isArray(poems.data) || poems.data.length === 0) {
-    return <div className={styles.errorMessage}>No poems found...</div>
+    return <p className={styles.errorMessage}>No poems found...</p>
   }
 
   return (
     <div className={styles.grid}>
-      {poems.data.map((poem: Poem) => (
+      {poems.data.map((poem: PoemProps) => (
         <PoemCard key={poem.title} poem={poem} />
       ))}
     </div>
