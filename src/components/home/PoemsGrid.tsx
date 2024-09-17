@@ -27,11 +27,11 @@ function PoemsGrid({
       let response
       if (searchTerm) {
         response = await fetch(
-          `https://poetrydb.org/author,title,poemcount/${selectedAuthor};${searchTerm};5/author,title,linecount`,
+          `https://poetrydb.org/author,title/${selectedAuthor};${searchTerm}/author,title,linecount`,
         )
       } else {
         response = await fetch(
-          `https://poetrydb.org/author,poemcount/${selectedAuthor};5/author,title,linecount`,
+          `https://poetrydb.org/author,poemcount/${selectedAuthor};12/author,title,linecount`,
         )
       }
       return response.json()

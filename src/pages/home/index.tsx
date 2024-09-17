@@ -3,7 +3,7 @@ import { Suspense, useState } from 'react'
 import { Input } from '../../components/ui/Input'
 import { Select, SelectOption } from '../../components/ui/Select'
 import { PoemsGrid } from '../../components/home/PoemsGrid'
-import { PoemsGridSkeleton } from '../../components/home/PoemsGrisSkeleton'
+import { PoemsGridSkeleton } from '../../components/home/PoemsGridSkeleton'
 
 export default function HomePage() {
   const [searchTerm, setSearchTerm] = useState('')
