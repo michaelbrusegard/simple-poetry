@@ -1,13 +1,25 @@
 import styles from './Home.module.css'
-import { Suspense, useState } from 'react'
+import { Suspense, useState, useEffect } from 'react'
 import { Input } from '../../components/ui/Input'
 import { Select, SelectOption } from '../../components/ui/Select'
 import { PoemsGrid } from '../../components/home/PoemsGrid'
 import { PoemsGridSkeleton } from '../../components/home/PoemsGridSkeleton'
 
 export default function HomePage() {
-  const [searchTerm, setSearchTerm] = useState('')
-  const [selectedAuthor, setSelectedAuthor] = useState('shakespeare')
+  const [searchTerm, setSearchTerm] = useState(
+    () => sessionStorage.getItem('searchTerm') || '',
+  )
+  const [selectedAuthor, setSelectedAuthor] = useState(
+    () => sessionStorage.getItem('selectedAuthor') || 'shakespeare',
+  )
+
+  useEffect(() => {
+    sessionStorage.setItem('searchTerm', searchTerm)
+  }, [searchTerm])
+
+  useEffect(() => {
+    sessionStorage.setItem('selectedAuthor', selectedAuthor)
+  }, [selectedAuthor])
   return (
     <>
       <h1>Find Poetry</h1>
