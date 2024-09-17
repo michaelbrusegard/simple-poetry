@@ -1,10 +1,7 @@
 import styles from './Card.module.css'
 
-function Card({
-  className,
-  ...props
-}: { className?: string } & React.HTMLAttributes<HTMLDivElement>) {
-  let classConstructor = styles['card']
+function Card({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
+  let classConstructor = styles.card
   classConstructor += ' ' + (className || '')
   return <div className={classConstructor} {...props} />
 }
@@ -12,8 +9,8 @@ function Card({
 function CardHeader({
   className,
   ...props
-}: { className?: string } & React.HTMLAttributes<HTMLDivElement>) {
-  let classConstructor = styles['card-header']
+}: React.HTMLAttributes<HTMLDivElement>) {
+  let classConstructor = styles.cardHeader
   classConstructor += ' ' + (className || '')
   return <div className={classConstructor} {...props} />
 }
@@ -21,8 +18,8 @@ function CardHeader({
 function CardTitle({
   className,
   ...props
-}: { className?: string } & React.HTMLAttributes<HTMLHeadingElement>) {
-  let classConstructor = styles['card-title']
+}: React.HTMLAttributes<HTMLHeadingElement>) {
+  let classConstructor = styles.cardTitle
   classConstructor += ' ' + (className || '')
   return <h3 className={classConstructor} {...props} />
 }
@@ -30,8 +27,8 @@ function CardTitle({
 function CardDescription({
   className,
   ...props
-}: { className?: string } & React.HTMLAttributes<HTMLParagraphElement>) {
-  let classConstructor = styles['card-description']
+}: React.HTMLAttributes<HTMLParagraphElement>) {
+  let classConstructor = styles.cardDescription
   classConstructor += ' ' + (className || '')
   return <p className={classConstructor} {...props} />
 }
@@ -39,8 +36,8 @@ function CardDescription({
 function CardContent({
   className,
   ...props
-}: { className?: string } & React.HTMLAttributes<HTMLDivElement>) {
-  let classConstructor = styles['card-content']
+}: React.HTMLAttributes<HTMLDivElement>) {
+  let classConstructor = styles.cardContent
   classConstructor += ' ' + (className || '')
   return <div className={classConstructor} {...props} />
 }
@@ -48,8 +45,8 @@ function CardContent({
 function CardFooter({
   className,
   ...props
-}: { className?: string } & React.HTMLAttributes<HTMLDivElement>) {
-  let classConstructor = styles['card-footer']
+}: React.HTMLAttributes<HTMLDivElement>) {
+  let classConstructor = styles.cardFooter
   classConstructor += ' ' + (className || '')
   return <div className={classConstructor} {...props} />
 }
