@@ -20,6 +20,7 @@ export default function HomePage() {
   useEffect(() => {
     sessionStorage.setItem('selectedAuthor', selectedAuthor)
   }, [selectedAuthor])
+
   return (
     <>
       <h1>Find Poetry</h1>
