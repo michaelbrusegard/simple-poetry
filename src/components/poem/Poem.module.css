@@ -8,3 +8,10 @@
 .lines {
   white-space: pre-line;
 }
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
