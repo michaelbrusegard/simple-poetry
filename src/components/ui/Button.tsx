@@ -1,15 +1,15 @@
-import React from 'react'
 import styles from './Button.module.css'
 
 function Button({
+  className,
   variant = 'default',
   size = 'default',
-  children,
+  ...props
 }: {
+  className?: string
   variant?: string
   size?: string
-  children: React.ReactNode
-}) {
+} & React.ButtonHTMLAttributes<HTMLButtonElement>) {
   const variantClasses: { [key: string]: string } = {
     secondary: styles['variant-secondary'],
     destructive: styles['variant-destructive'],
@@ -24,11 +24,12 @@ function Button({
     default: styles['size-default'],
   }
 
-  let className =
+  let classConstructor =
     styles['button'] + ' ' + (variantClasses[variant] || variantClasses.default)
-  className += ' ' + (sizeClasses[size] || sizeClasses.default)
+  classConstructor += ' ' + (sizeClasses[size] || sizeClasses.default)
+  classConstructor += ' ' + (className || '')
 
-  return <button className={className}>{children}</button>
+  return <button className={classConstructor} {...props} />
 }
 
 export { Button }
