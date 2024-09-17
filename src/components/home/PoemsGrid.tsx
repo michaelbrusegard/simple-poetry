@@ -38,19 +38,27 @@ function PoemsGrid({
     },
   })
 
+  if (poems.error) {
+    return (
+      <div className={styles.errorMessage}>Error: {poems.error.message}</div>
+    )
+  }
+
+  if (!Array.isArray(poems.data) || poems.data.length === 0) {
+    return <div className={styles.errorMessage}>No poems found...</div>
+  }
+
   return (
     <div className={styles.grid}>
-      {Array.isArray(poems.data)
-        ? poems.data.map((poem: Poem) => (
-            <Card className={styles.card} key={poem.title}>
-              <CardHeader>
-                <CardTitle>{poem.title}</CardTitle>
-              </CardHeader>
-              <CardContent>{poem.author}</CardContent>
-              <CardFooter>{poem.linecount} lines</CardFooter>
-            </Card>
-          ))
-        : null}
+      {poems.data.map((poem: Poem) => (
+        <Card className={styles.card} key={poem.title}>
+          <CardHeader>
+            <CardTitle>{poem.title}</CardTitle>
+          </CardHeader>
+          <CardContent>{poem.author}</CardContent>
+          <CardFooter>{poem.linecount} lines</CardFooter>
+        </Card>
+      ))}
     </div>
   )
 }
