@@ -7,12 +7,12 @@ import {
   CardTitle,
 } from '../ui/Card'
 import { Link } from 'react-router-dom'
-import { Poem } from './types'
+import { PoemProps } from '../../types'
 
 function PoemCard({
   poem,
   ...props
-}: { poem: Poem } & React.HTMLAttributes<HTMLAnchorElement>) {
+}: { poem: PoemProps } & React.HTMLAttributes<HTMLAnchorElement>) {
   return (
     <Link
       className={styles.link}
@@ -24,9 +24,7 @@ function PoemCard({
           <CardTitle>{poem.title}</CardTitle>
         </CardHeader>
         <CardContent>{poem.author}</CardContent>
-        {poem.linecount ? (
-          <CardFooter>{poem.linecount} lines</CardFooter>
-        ) : null}
+        <CardFooter>{poem.linecount} lines</CardFooter>
       </Card>
     </Link>
   )

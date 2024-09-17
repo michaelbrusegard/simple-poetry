@@ -1,7 +1,10 @@
+import { FavoriteGrid } from '../../components/favorites/FavoriteGrid'
+
 export default function FavoritesPage() {
   return (
-    <div>
+    <>
       <h1>Favorites</h1>
-    </div>
+      <FavoriteGrid />
+    </>
   )
 }
