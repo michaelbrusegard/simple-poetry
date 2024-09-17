@@ -1,0 +1,23 @@
+.spinner {
+  border: 0.375rem solid rgba(var(--primary-foreground), 0.25);
+  border-top: 0.375rem solid rgb(var(--primary));
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
