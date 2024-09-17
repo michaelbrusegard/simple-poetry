@@ -24,8 +24,8 @@ function Button({
   }
 
   let classConstructor =
-    styles.button + ' ' + (variantClasses.variant || variantClasses.default)
-  classConstructor += ' ' + (sizeClasses.size || sizeClasses.default)
+    styles.button + ' ' + (variantClasses[variant] || variantClasses.default)
+  classConstructor += ' ' + (sizeClasses[size] || sizeClasses.default)
   classConstructor += ' ' + (className || '')
 
   return <button className={classConstructor} {...props} />
