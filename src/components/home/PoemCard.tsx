@@ -14,7 +14,11 @@ function PoemCard({
   ...props
 }: { poem: Poem } & React.HTMLAttributes<HTMLAnchorElement>) {
   return (
-    <Link to={`/poem/${encodeURIComponent(poem.title)}`} {...props}>
+    <Link
+      className={styles.link}
+      to={`/poem/${encodeURIComponent(poem.title)}`}
+      {...props}
+    >
       <Card className={styles.card}>
         <CardHeader>
           <CardTitle>{poem.title}</CardTitle>

@@ -6,3 +6,7 @@
 .card:hover {
   border-color: rgb(var(--primary));
 }
+
+.link:focus-visible {
+  outline: 2px auto rgb(var(--ring));
+}
