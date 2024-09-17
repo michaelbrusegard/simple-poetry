@@ -1,9 +1,9 @@
 import { screen, render } from '@testing-library/react'
-import App from './App'
+import HomePage from './index'
 
-describe('App tests', () => {
+describe('Home tests', () => {
   it('should render the title', () => {
-    render(<App />)
+    render(<HomePage />)
 
     expect(
       screen.getByRole('heading', {
