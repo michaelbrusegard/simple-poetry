@@ -3,7 +3,7 @@ import styles from './Select.module.css'
 function ArrowIcon() {
   return (
     <svg
-      className={styles['arrow-icon']}
+      className={styles.arrowIcon}
       xmlns='http://www.w3.org/2000/svg'
       width='24'
       height='24'
@@ -22,24 +22,13 @@ function ArrowIcon() {
 
 function Select({
   className,
-  value,
-  onChange,
   ...props
-}: {
-  className?: string
-  value: string
-  onChange: (value: string) => void
-} & React.SelectHTMLAttributes<HTMLSelectElement>) {
-  let classConstructor = styles['select']
+}: React.SelectHTMLAttributes<HTMLSelectElement>) {
+  let classConstructor = styles.select
   classConstructor += ' ' + (className || '')
   return (
-    <div className={styles['select-parent']}>
-      <select
-        className={classConstructor}
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        {...props}
-      />
+    <div className={styles.selectParent}>
+      <select className={classConstructor} {...props} />
       <ArrowIcon />
     </div>
   )
@@ -50,10 +39,9 @@ function SelectOption({
   value,
   ...props
 }: {
-  className?: string
   value: string
 } & React.OptionHTMLAttributes<HTMLOptionElement>) {
-  let classConstructor = styles['select-option']
+  let classConstructor = styles.selectOption
   classConstructor += ' ' + (className || '')
   return <option value={value} className={classConstructor} {...props} />
 }
