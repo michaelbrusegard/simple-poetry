@@ -6,27 +6,26 @@ function Button({
   size = 'default',
   ...props
 }: {
-  className?: string
   variant?: string
   size?: string
 } & React.ButtonHTMLAttributes<HTMLButtonElement>) {
   const variantClasses: { [key: string]: string } = {
-    secondary: styles['variant-secondary'],
-    destructive: styles['variant-destructive'],
-    outline: styles['variant-outline'],
-    default: styles['variant-default'],
+    secondary: styles.variantSecondary,
+    destructive: styles.variantDestructive,
+    outline: styles.variantOutline,
+    default: styles.variantDefault,
   }
 
   const sizeClasses: { [key: string]: string } = {
-    sm: styles['size-sm'],
-    lg: styles['size-lg'],
-    icon: styles['size-icon'],
-    default: styles['size-default'],
+    sm: styles.sizeSm,
+    lg: styles.sizeLg,
+    icon: styles.sizeIcon,
+    default: styles.sizeDefault,
   }
 
   let classConstructor =
-    styles['button'] + ' ' + (variantClasses[variant] || variantClasses.default)
-  classConstructor += ' ' + (sizeClasses[size] || sizeClasses.default)
+    styles.button + ' ' + (variantClasses.variant || variantClasses.default)
+  classConstructor += ' ' + (sizeClasses.size || sizeClasses.default)
   classConstructor += ' ' + (className || '')
 
   return <button className={classConstructor} {...props} />

@@ -25,62 +25,62 @@
   cursor: not-allowed;
 }
 
-.variant-default {
+.variantDefault {
   background-color: rgb(var(--primary));
   color: rgb(var(--primary-foreground));
   transition: background-color 0.3s ease;
 }
 
-.variant-default:hover {
+.variantDefault:hover {
   background-color: rgba(var(--primary), 0.9);
 }
 
-.variant-destructive {
+.variantDestructive {
   background-color: rgb(var(--destructive));
   color: rgb(var(--destructive-foreground));
 }
 
-.variant-destructive:hover {
+.variantDestructive:hover {
   background-color: rgba(var(--destructive), 0.9);
 }
 
-.variant-outline {
+.variantOutline {
   border: 1px solid rgb(var(--input));
   background-color: rgb(var(--background));
 }
 
-.variant-outline:hover {
+.variantOutline:hover {
   background-color: rgb(var(--accent));
   color: rgb(var(--accent-foreground));
 }
 
-.variant-secondary {
+.variantSecondary {
   background-color: rgb(var(--secondary));
   color: rgb(var(--secondary-foreground));
 }
 
-.variant-secondary:hover {
+.variantSecondary:hover {
   background-color: rgba(var(--secondary), 0.8);
 }
 
-.size-default {
+.sizeDefault {
   height: 2.5rem;
   padding: 0.5rem 1rem;
 }
 
-.size-sm {
+.sizeSm {
   height: 2.25rem;
   border-radius: 0.375rem;
   padding: 0 0.75rem;
 }
 
-.size-lg {
+.sizeLg {
   height: 2.75rem;
   border-radius: 0.375rem;
   padding: 0 2rem;
 }
 
-.size-icon {
+.sizeIcon {
   height: 2.5rem;
   width: 2.5rem;
 }

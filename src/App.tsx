@@ -1,27 +1,11 @@
-import './App.css'
-import { Button } from './components/ui/Button'
-import { Select, SelectOption } from './components/ui/Select'
+import HomePage from './pages/home'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
-function App() {
+export default function App() {
+  const queryClient = new QueryClient()
   return (
-    <>
-      <h1>Find Poetry</h1>
-      <div className='card'>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className='read-the-docs'>
-        Click on the Vite and React logos to learn more
-      </p>
-      <Button>Hello</Button>
-      <Select value='1' onChange={() => {}}>
-        <SelectOption value='1'>One</SelectOption>
-        <SelectOption value='2'>Two</SelectOption>
-        <SelectOption value='3'>Three</SelectOption>
-      </Select>
-    </>
+    <QueryClientProvider client={queryClient}>
+      <HomePage />
+    </QueryClientProvider>
   )
 }
-
-export default App
