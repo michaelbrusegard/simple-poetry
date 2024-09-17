@@ -38,13 +38,13 @@
     --foreground: 255, 255, 255;
     --card: 28, 25, 23;
     --card-foreground: 255, 255, 255;
-    --popover: 255, 255, 255;
+    --popover: 23, 23, 23;
     --popover-foreground: 255, 255, 255;
     --primary: 225, 29, 72;
     --primary-foreground: 255, 241, 242;
     --secondary: 39, 39, 42;
     --secondary-foreground: 255, 255, 255;
-    --muted: 255, 255, 255;
+    --muted: 38, 38, 38;
     --muted-foreground: 159, 159, 168;
     --accent: 41, 37, 36;
     --accent-foreground: 255, 255, 255;
