@@ -1,13 +1,18 @@
 import styles from './Poem.module.css'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { Poem } from '../../components/poem/Poem'
 import { Suspense } from 'react'
 import { Spinner } from '../../components/ui/Spinner'
 
 export default function PoemPage() {
+  const navigate = useNavigate()
   const { poemName = '' } = useParams()
   const decodedPoemName = decodeURIComponent(poemName)
   const poemAuthor = sessionStorage.getItem('selectedAuthor') || ''
+
+  if (!decodedPoemName || !poemAuthor) {
+    navigate('/')
+  }
 
   return (
     <article>
