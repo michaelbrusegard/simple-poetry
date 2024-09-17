@@ -1,0 +1,8 @@
+.card {
+  height: 100%;
+  transition: border-color 0.5s;
+}
+
+.card:hover {
+  border-color: rgb(var(--primary));
+}
