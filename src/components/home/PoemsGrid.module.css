@@ -4,5 +4,12 @@
   gap: 1rem;
 }
 
+.errorMessage {
+  text-align: center;
+  font-size: 1.5em;
+  color: rgb(var(--destructive));
+  padding: 1.5rem;
+}
+
 .card {
 }
