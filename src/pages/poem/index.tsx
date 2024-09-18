@@ -6,19 +6,21 @@ import { Spinner } from '../../components/ui/Spinner'
 
 export default function PoemPage() {
   const navigate = useNavigate()
-  const { poemName = '' } = useParams()
-  const decodedPoemName = decodeURIComponent(poemName)
-  const poemAuthor = sessionStorage.getItem('selectedAuthor') || ''
+  const { poem = '' } = useParams()
+  const poemParts = decodeURIComponent(poem).split(';')
+  const author = poemParts[0]
+  const title = poemParts[1]
 
-  if (!decodedPoemName || !poemAuthor) {
+  if (!poem) {
     navigate('/')
   }
 
   return (
     <article>
-      <h1>{decodedPoemName}</h1>
+      <h1>{title}</h1>
+      <h2 className={styles.author}>{author}</h2>
       <Suspense fallback={<Spinner className={styles.spin} />}>
-        <Poem poemTitle={decodedPoemName} poemAuthor={poemAuthor} />
+        <Poem poemTitle={title} poemAuthor={author} />
       </Suspense>
     </article>
   )

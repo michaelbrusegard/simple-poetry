@@ -35,7 +35,7 @@ function Poem({
           fav.linecount === poem.data[0].linecount,
       ),
     )
-  }, [poem])
+  }, [poem, poemTitle])
 
   const handleFavoriteClick = () => {
     const favorites = JSON.parse(localStorage.getItem('favorites') || '[]')
@@ -61,7 +61,6 @@ function Poem({
   }
   return (
     <>
-      <h2 className={styles.author}>{poem.data[0].author}</h2>
       <p className={styles.lines}>{poem.data[0].lines.join('\n')}</p>
       <div className={styles.buttonWrapper}>
         <Button variant='secondary' onClick={() => navigate(-1)}>
