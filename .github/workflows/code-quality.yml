@@ -12,6 +12,7 @@ jobs:
   quality-check:
     name: Checkout
     runs-on: self-hosted
+    continue-on-error: false
     strategy:
       fail-fast: true
       matrix:

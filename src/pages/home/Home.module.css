@@ -6,10 +6,19 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
-  max-width: 480px;
-  gap: 4rem;
+  max-width: 600px;
+  gap: 1rem;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .searchBar {
   width: 100%;
+}
+
+.groupWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
 }

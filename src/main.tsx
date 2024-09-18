@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: `${BASE_PATH}/poem/:poemName`,
+    path: `${BASE_PATH}/poem/:poem`,
     element: <PoemPage />,
   },
   {
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
     element: <FavoritesPage />,
   },
   {
-    path: '*',
+    path: `${BASE_PATH}/*`,
     element: <NotFoundPage />,
   },
 ])
