@@ -1,14 +1,21 @@
-name: Lint
+name: Code Quality
 
 on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  lint:
-    name: Lint Code
-    runs-on: ubuntu-latest
+  quality-check:
+    name: Checkout
+    runs-on: self-hosted
+    strategy:
+      fail-fast: true
+      matrix:
+        check: ['lint', 'format', 'test']
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -19,25 +26,16 @@ jobs:
           node-version: '22'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Run ESLint
+        if: matrix.check == 'lint'
         run: npx eslint . --max-warnings=0
 
-  format:
-    name: Format Code
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-
-      - name: Install dependencies
-        run: npm install
-
       - name: Run Prettier
+        if: matrix.check == 'format'
         run: npx prettier --check .
+
+      - name: Run tests
+        if: matrix.check == 'test'
+        run: npx vitest run
