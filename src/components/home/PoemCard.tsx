@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from '../ui/Card'
-import { Link } from 'react-router-dom'
+import { Link } from '../../router'
 import { Poem } from './types'
 
 function PoemCard({
