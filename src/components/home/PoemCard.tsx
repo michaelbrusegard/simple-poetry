@@ -6,8 +6,8 @@ import {
   CardHeader,
   CardTitle,
 } from '../ui/Card'
-import { Link } from 'react-router-dom'
 import { PoemProps } from '../../types'
+import { Link } from '../../router'
 
 function PoemCard({
   poem,
@@ -16,7 +16,7 @@ function PoemCard({
   return (
     <Link
       className={styles.link}
-      to={`/poem/${encodeURIComponent(poem.title)}`}
+      to={`/poem/${encodeURIComponent(poem.author)};${encodeURIComponent(poem.title)}`}
       {...props}
     >
       <Card className={styles.card}>

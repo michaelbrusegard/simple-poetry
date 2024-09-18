@@ -1,3 +1,10 @@
 .spin {
   height: 60vh;
 }
+
+.author {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  text-align: center;
+  color: rgba(var(--muted-foreground), 0.6);
+}
