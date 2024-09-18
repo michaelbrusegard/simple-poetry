@@ -7,7 +7,7 @@ on:
 
 jobs:
   quality-check:
-    name: Linting, Formatting and Testing
+    name: Checkout
     runs-on: self-hosted
     strategy:
       fail-fast: true
