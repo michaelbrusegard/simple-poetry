@@ -12,7 +12,7 @@ export default function HomePage() {
     () => sessionStorage.getItem('searchTerm') || '',
   )
   const [selectedAuthor, setSelectedAuthor] = useState(
-    () => sessionStorage.getItem('selectedAuthor') || 'shakespeare',
+    () => sessionStorage.getItem('selectedAuthor') || 'William Shakespeare',
   )
   const [selectedView, setSelectedView] = useState(
     () => sessionStorage.getItem('selectedView') || 'grid',
@@ -39,11 +39,11 @@ export default function HomePage() {
             value={selectedAuthor}
             onChange={(e) => setSelectedAuthor(e.target.value)}
           >
-            <SelectOption value='blake'>Blake</SelectOption>
-            <SelectOption value='dickinson'>Dickinson</SelectOption>
-            <SelectOption value='rossetti'>Rossetti</SelectOption>
-            <SelectOption value='shakespeare'>Shakespeare</SelectOption>
-            <SelectOption value='whitman'>Whitman</SelectOption>
+            <SelectOption value='William Blake'>Blake</SelectOption>
+            <SelectOption value='Emily Dickinson'>Dickinson</SelectOption>
+            <SelectOption value='Christiana Rossetti'>Rossetti</SelectOption>
+            <SelectOption value='William Shakespeare'>Shakespeare</SelectOption>
+            <SelectOption value='Walt Whitman'>Whitman</SelectOption>
           </Select>
           <Input
             className={styles.searchBar}

@@ -17,6 +17,9 @@
 
 .carouselPoem {
   min-width: 300px;
+  @media (max-width: 768px) {
+    min-width: auto;
+  }
 }
 
 .carouselButton {
