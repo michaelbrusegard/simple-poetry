@@ -1,4 +1,4 @@
-import { waitFor, fireEvent } from '@testing-library/react'
+import { waitFor, fireEvent, act } from '@testing-library/react'
 import { render } from '../../test/utils'
 import { Poem } from './Poem'
 
@@ -46,5 +46,19 @@ describe('Poem', () => {
     await waitFor(() => {
       expect(getByText(/Favorite/i)).toBeInTheDocument()
     })
+  })
+
+  it('should match the snapshot', async () => {
+    let fragment
+    await act(async () => {
+      const { asFragment } = render(
+        <Poem
+          poemTitle='Spring and Winter ii'
+          poemAuthor='William Shakespeare'
+        />,
+      )
+      fragment = asFragment()
+    })
+    expect(fragment).toMatchSnapshot()
   })
 })

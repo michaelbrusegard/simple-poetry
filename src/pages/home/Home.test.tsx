@@ -44,4 +44,13 @@ describe('Home tests', () => {
     })
     expect(sessionStorage.getItem('selectedAuthor')).toBe('Emily Dickinson')
   })
+
+  it('should match the snapshot', async () => {
+    let fragment
+    await act(async () => {
+      const { asFragment } = render(<HomePage />)
+      fragment = asFragment()
+    })
+    expect(fragment).toMatchSnapshot()
+  })
 })
