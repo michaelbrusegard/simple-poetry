@@ -1,0 +1,34 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 10.5rem;
+}
+
+.carouselPoem {
+  min-width: 300px;
+}
+
+.carouselButton {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.errorMessage {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1.5em;
+  color: rgb(var(--destructive));
+  padding: 1.5rem;
+}

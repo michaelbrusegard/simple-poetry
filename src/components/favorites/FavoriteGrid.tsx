@@ -1,4 +1,4 @@
-import styles from '../home/PoemsGrid.module.css'
+import styles from '../home/Poems.module.css'
 import { PoemCard } from '../home/PoemCard'
 import { PoemProps } from '../../types'
 import { useEffect, useState } from 'react'
