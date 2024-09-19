@@ -1,7 +1,8 @@
-import styles from './PoemsGrid.module.css'
+import styles from './Poems.module.css'
 import { useSuspenseQuery } from '@tanstack/react-query'
 import { PoemCard } from './PoemCard'
 import { PoemProps } from '../../types'
+import { fetchPoems } from './poemsquery'
 
 function PoemsGrid({
   searchTerm,
@@ -12,19 +13,7 @@ function PoemsGrid({
 }) {
   const poems = useSuspenseQuery({
     queryKey: ['poems', searchTerm, selectedAuthor],
-    queryFn: async () => {
-      let response
-      if (searchTerm) {
-        response = await fetch(
-          `https://poetrydb.org/author,title/${selectedAuthor};${searchTerm}/author,title,linecount`,
-        )
-      } else {
-        response = await fetch(
-          `https://poetrydb.org/author,poemcount/${selectedAuthor};12/author,title,linecount`,
-        )
-      }
-      return response.json()
-    },
+    queryFn: () => fetchPoems(searchTerm, selectedAuthor),
   })
 
   if (poems.error) {

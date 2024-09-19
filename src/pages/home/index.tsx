@@ -5,6 +5,7 @@ import { Select, SelectOption } from '../../components/ui/Select'
 import { Link } from '../../components/ui/Link'
 import { PoemsGrid } from '../../components/home/PoemsGrid'
 import { PoemsGridSkeleton } from '../../components/home/PoemsGridSkeleton'
+import { PoemsCarousel } from '../../components/home/PoemsCarousel'
 
 export default function HomePage() {
   const [searchTerm, setSearchTerm] = useState(
@@ -12,6 +13,9 @@ export default function HomePage() {
   )
   const [selectedAuthor, setSelectedAuthor] = useState(
     () => sessionStorage.getItem('selectedAuthor') || 'shakespeare',
+  )
+  const [selectedView, setSelectedView] = useState(
+    () => sessionStorage.getItem('selectedView') || 'grid',
   )
 
   useEffect(() => {
@@ -21,6 +25,10 @@ export default function HomePage() {
   useEffect(() => {
     sessionStorage.setItem('selectedAuthor', selectedAuthor)
   }, [selectedAuthor])
+
+  useEffect(() => {
+    sessionStorage.setItem('selectedView', selectedView)
+  }, [selectedView])
 
   return (
     <>
@@ -45,12 +53,26 @@ export default function HomePage() {
           ></Input>
         </div>
         <div className={styles.groupWrapper}>
+          <Select
+            value={selectedView}
+            onChange={(e) => setSelectedView(e.target.value)}
+          >
+            <SelectOption value='carousel'>Carousel</SelectOption>
+            <SelectOption value='grid'>Grid</SelectOption>
+          </Select>
           <Link to='/favorites'>Favorites</Link>
         </div>
       </header>
-      <Suspense fallback={<PoemsGridSkeleton />}>
-        <PoemsGrid searchTerm={searchTerm} selectedAuthor={selectedAuthor} />
-      </Suspense>
+      {selectedView === 'carousel' ? (
+        <PoemsCarousel
+          searchTerm={searchTerm}
+          selectedAuthor={selectedAuthor}
+        />
+      ) : (
+        <Suspense fallback={<PoemsGridSkeleton />}>
+          <PoemsGrid searchTerm={searchTerm} selectedAuthor={selectedAuthor} />
+        </Suspense>
+      )}
     </>
   )
 }
