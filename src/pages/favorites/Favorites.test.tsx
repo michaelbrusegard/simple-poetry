@@ -1,4 +1,4 @@
-import { screen, act } from '@testing-library/react'
+import { screen } from '@testing-library/react'
 import { render } from '../../test/utils'
 import FavoritesPage from './index'
 
@@ -14,11 +14,8 @@ describe('FavoritesPage tests', () => {
   })
 
   it('should match the snapshot', async () => {
-    let fragment
-    await act(async () => {
-      const { asFragment } = render(<FavoritesPage />)
-      fragment = asFragment()
-    })
+    const { asFragment } = render(<FavoritesPage />)
+    const fragment = asFragment()
     expect(fragment).toMatchSnapshot()
   })
 })

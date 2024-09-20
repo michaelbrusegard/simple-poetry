@@ -1,10 +1,10 @@
-import { screen, fireEvent, act } from '@testing-library/react'
+import { screen, fireEvent, waitFor } from '@testing-library/react'
 import { render } from '../../test/utils'
 import HomePage from './index'
 
 describe('Home tests', () => {
   it('should render the title', async () => {
-    await act(async () => {
+    await waitFor(async () => {
       render(<HomePage />)
     })
     expect(
@@ -47,7 +47,7 @@ describe('Home tests', () => {
 
   it('should match the snapshot', async () => {
     let fragment
-    await act(async () => {
+    await waitFor(async () => {
       const { asFragment } = render(<HomePage />)
       fragment = asFragment()
     })
