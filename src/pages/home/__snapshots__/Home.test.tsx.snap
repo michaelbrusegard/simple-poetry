@@ -1,3 +1,478 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Home tests > should match the snapshot 1`] = `<DocumentFragment />`;
+exports[`Home tests > should match the snapshot 1`] = `
+<DocumentFragment>
+  <h1>
+    Find Poetry
+  </h1>
+  <header
+    class="_header_c7ee54"
+  >
+    <div
+      class="_groupWrapper_c7ee54"
+    >
+      <div
+        class="_selectParent_7db750"
+      >
+        <label
+          class="_hidden_7db750"
+          for=":ra:"
+        >
+          Select an author
+        </label>
+        <select
+          class="_select_7db750 "
+          id=":ra:"
+        >
+          <option
+            class="_selectOption_7db750 "
+            value="William Blake"
+          >
+            Blake
+          </option>
+          <option
+            class="_selectOption_7db750 "
+            value="Emily Dickinson"
+          >
+            Dickinson
+          </option>
+          <option
+            class="_selectOption_7db750 "
+            value="Christina Rossetti"
+          >
+            Rossetti
+          </option>
+          <option
+            class="_selectOption_7db750 "
+            value="William Shakespeare"
+          >
+            Shakespeare
+          </option>
+          <option
+            class="_selectOption_7db750 "
+            value="Walt Whitman"
+          >
+            Whitman
+          </option>
+        </select>
+        <svg
+          aria-hidden="true"
+          class="_arrowIcon_7db750"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m6 9 6 6 6-6"
+          />
+        </svg>
+      </div>
+      <input
+        class="_input_8192d9 _searchBar_c7ee54"
+        placeholder="Search for a poem..."
+        value=""
+      />
+    </div>
+    <div
+      class="_groupWrapper_c7ee54"
+    >
+      <div
+        class="_selectParent_7db750"
+      >
+        <label
+          class="_hidden_7db750"
+          for=":rb:"
+        >
+          Select a view
+        </label>
+        <select
+          class="_select_7db750 "
+          id=":rb:"
+        >
+          <option
+            class="_selectOption_7db750 "
+            value="carousel"
+          >
+            Carousel
+          </option>
+          <option
+            class="_selectOption_7db750 "
+            value="grid"
+          >
+            Grid
+          </option>
+        </select>
+        <svg
+          aria-hidden="true"
+          class="_arrowIcon_7db750"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m6 9 6 6 6-6"
+          />
+        </svg>
+      </div>
+      <a
+        class="_button_8ea813 _variantDefault_8ea813 _sizeDefault_8ea813 "
+        href="/project1/favorites"
+      >
+        Favorites
+      </a>
+    </div>
+  </header>
+  <div
+    class="_grid_276d41"
+  >
+    <a
+      class="_link_871016"
+      href="/project1/poem/William Shakespeare;A Lover's Complaint"
+    >
+      <div
+        class="_card_204ad1 _card_871016"
+      >
+        <div
+          class="_cardHeader_204ad1 "
+        >
+          <h2
+            class="_cardTitle_204ad1 "
+          >
+            A Lover's Complaint
+          </h2>
+        </div>
+        <div
+          class="_cardContent_204ad1 "
+        >
+          William Shakespeare
+        </div>
+        <div
+          class="_cardFooter_204ad1 "
+        >
+          331 lines
+        </div>
+      </div>
+    </a>
+    <a
+      class="_link_871016"
+      href="/project1/poem/William Shakespeare;Spring and Winter ii"
+    >
+      <div
+        class="_card_204ad1 _card_871016"
+      >
+        <div
+          class="_cardHeader_204ad1 "
+        >
+          <h2
+            class="_cardTitle_204ad1 "
+          >
+            Spring and Winter ii
+          </h2>
+        </div>
+        <div
+          class="_cardContent_204ad1 "
+        >
+          William Shakespeare
+        </div>
+        <div
+          class="_cardFooter_204ad1 "
+        >
+          18 lines
+        </div>
+      </div>
+    </a>
+    <a
+      class="_link_871016"
+      href="/project1/poem/William Shakespeare;Orpheus with his Lute Made Trees"
+    >
+      <div
+        class="_card_204ad1 _card_871016"
+      >
+        <div
+          class="_cardHeader_204ad1 "
+        >
+          <h2
+            class="_cardTitle_204ad1 "
+          >
+            Orpheus with his Lute Made Trees
+          </h2>
+        </div>
+        <div
+          class="_cardContent_204ad1 "
+        >
+          William Shakespeare
+        </div>
+        <div
+          class="_cardFooter_204ad1 "
+        >
+          12 lines
+        </div>
+      </div>
+    </a>
+    <a
+      class="_link_871016"
+      href="/project1/poem/William Shakespeare;Winter"
+    >
+      <div
+        class="_card_204ad1 _card_871016"
+      >
+        <div
+          class="_cardHeader_204ad1 "
+        >
+          <h2
+            class="_cardTitle_204ad1 "
+          >
+            Winter
+          </h2>
+        </div>
+        <div
+          class="_cardContent_204ad1 "
+        >
+          William Shakespeare
+        </div>
+        <div
+          class="_cardFooter_204ad1 "
+        >
+          18 lines
+        </div>
+      </div>
+    </a>
+    <a
+      class="_link_871016"
+      href="/project1/poem/William Shakespeare;Spring"
+    >
+      <div
+        class="_card_204ad1 _card_871016"
+      >
+        <div
+          class="_cardHeader_204ad1 "
+        >
+          <h2
+            class="_cardTitle_204ad1 "
+          >
+            Spring
+          </h2>
+        </div>
+        <div
+          class="_cardContent_204ad1 "
+        >
+          William Shakespeare
+        </div>
+        <div
+          class="_cardFooter_204ad1 "
+        >
+          18 lines
+        </div>
+      </div>
+    </a>
+    <a
+      class="_link_871016"
+      href="/project1/poem/William Shakespeare;Spring and Winter i"
+    >
+      <div
+        class="_card_204ad1 _card_871016"
+      >
+        <div
+          class="_cardHeader_204ad1 "
+        >
+          <h2
+            class="_cardTitle_204ad1 "
+          >
+            Spring and Winter i
+          </h2>
+        </div>
+        <div
+          class="_cardContent_204ad1 "
+        >
+          William Shakespeare
+        </div>
+        <div
+          class="_cardFooter_204ad1 "
+        >
+          18 lines
+        </div>
+      </div>
+    </a>
+    <a
+      class="_link_871016"
+      href="/project1/poem/William Shakespeare;Blow, Blow, Thou Winter Wind"
+    >
+      <div
+        class="_card_204ad1 _card_871016"
+      >
+        <div
+          class="_cardHeader_204ad1 "
+        >
+          <h2
+            class="_cardTitle_204ad1 "
+          >
+            Blow, Blow, Thou Winter Wind
+          </h2>
+        </div>
+        <div
+          class="_cardContent_204ad1 "
+        >
+          William Shakespeare
+        </div>
+        <div
+          class="_cardFooter_204ad1 "
+        >
+          20 lines
+        </div>
+      </div>
+    </a>
+    <a
+      class="_link_871016"
+      href="/project1/poem/William Shakespeare;Under the Greenwood Tree"
+    >
+      <div
+        class="_card_204ad1 _card_871016"
+      >
+        <div
+          class="_cardHeader_204ad1 "
+        >
+          <h2
+            class="_cardTitle_204ad1 "
+          >
+            Under the Greenwood Tree
+          </h2>
+        </div>
+        <div
+          class="_cardContent_204ad1 "
+        >
+          William Shakespeare
+        </div>
+        <div
+          class="_cardFooter_204ad1 "
+        >
+          16 lines
+        </div>
+      </div>
+    </a>
+    <a
+      class="_link_871016"
+      href="/project1/poem/William Shakespeare;Sonnet 3: Look in thy glass and tell the face thou viewest"
+    >
+      <div
+        class="_card_204ad1 _card_871016"
+      >
+        <div
+          class="_cardHeader_204ad1 "
+        >
+          <h2
+            class="_cardTitle_204ad1 "
+          >
+            Sonnet 3: Look in thy glass and tell the face thou viewest
+          </h2>
+        </div>
+        <div
+          class="_cardContent_204ad1 "
+        >
+          William Shakespeare
+        </div>
+        <div
+          class="_cardFooter_204ad1 "
+        >
+          14 lines
+        </div>
+      </div>
+    </a>
+    <a
+      class="_link_871016"
+      href="/project1/poem/William Shakespeare;Sonnet 7: Lo! in the orient when the gracious light"
+    >
+      <div
+        class="_card_204ad1 _card_871016"
+      >
+        <div
+          class="_cardHeader_204ad1 "
+        >
+          <h2
+            class="_cardTitle_204ad1 "
+          >
+            Sonnet 7: Lo! in the orient when the gracious light
+          </h2>
+        </div>
+        <div
+          class="_cardContent_204ad1 "
+        >
+          William Shakespeare
+        </div>
+        <div
+          class="_cardFooter_204ad1 "
+        >
+          14 lines
+        </div>
+      </div>
+    </a>
+    <a
+      class="_link_871016"
+      href="/project1/poem/William Shakespeare;Sonnet 8: Music to hear, why hear'st thou music sadly"
+    >
+      <div
+        class="_card_204ad1 _card_871016"
+      >
+        <div
+          class="_cardHeader_204ad1 "
+        >
+          <h2
+            class="_cardTitle_204ad1 "
+          >
+            Sonnet 8: Music to hear, why hear'st thou music sadly?
+          </h2>
+        </div>
+        <div
+          class="_cardContent_204ad1 "
+        >
+          William Shakespeare
+        </div>
+        <div
+          class="_cardFooter_204ad1 "
+        >
+          14 lines
+        </div>
+      </div>
+    </a>
+    <a
+      class="_link_871016"
+      href="/project1/poem/William Shakespeare;Sonnet 10: For shame! deny that thou bear'st love to any"
+    >
+      <div
+        class="_card_204ad1 _card_871016"
+      >
+        <div
+          class="_cardHeader_204ad1 "
+        >
+          <h2
+            class="_cardTitle_204ad1 "
+          >
+            Sonnet 10: For shame! deny that thou bear'st love to any
+          </h2>
+        </div>
+        <div
+          class="_cardContent_204ad1 "
+        >
+          William Shakespeare
+        </div>
+        <div
+          class="_cardFooter_204ad1 "
+        >
+          14 lines
+        </div>
+      </div>
+    </a>
+  </div>
+</DocumentFragment>
+`;

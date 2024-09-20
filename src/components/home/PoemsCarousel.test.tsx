@@ -1,4 +1,4 @@
-import { screen, fireEvent, act, waitFor } from '@testing-library/react'
+import { screen, fireEvent, waitFor } from '@testing-library/react'
 import { PoemsCarousel } from './PoemsCarousel'
 import { render } from '../../test/utils'
 
@@ -31,7 +31,7 @@ describe('PoemsCarousel', () => {
 
   it('should match the snapshot', async () => {
     let fragment
-    await act(async () => {
+    await waitFor(async () => {
       const { asFragment } = render(
         <PoemsCarousel
           searchTerm='Love'
