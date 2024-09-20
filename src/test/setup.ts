@@ -8,6 +8,7 @@ import {
   poemsDickinson,
   poemSpringAndWinterIi,
   poemsShakespeare,
+  poemsShakespeareLove,
 } from './mocks'
 
 expect.extend(matchers)
@@ -35,6 +36,12 @@ export const restHandlers = [
     'https://poetrydb.org/author,title/William%20Shakespeare;Spring%20and%20Winter%20ii/lines,author,linecount',
     () => {
       return HttpResponse.json(poemSpringAndWinterIi)
+    },
+  ),
+  http.get(
+    'https://poetrydb.org/author,title/William%20Shakespeare;Love/author,title,linecount',
+    () => {
+      return HttpResponse.json(poemsShakespeareLove)
     },
   ),
 ]

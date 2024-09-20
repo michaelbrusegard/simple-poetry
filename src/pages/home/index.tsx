@@ -41,7 +41,7 @@ export default function HomePage() {
           >
             <SelectOption value='William Blake'>Blake</SelectOption>
             <SelectOption value='Emily Dickinson'>Dickinson</SelectOption>
-            <SelectOption value='Christiana Rossetti'>Rossetti</SelectOption>
+            <SelectOption value='Christina Rossetti'>Rossetti</SelectOption>
             <SelectOption value='William Shakespeare'>Shakespeare</SelectOption>
             <SelectOption value='Walt Whitman'>Whitman</SelectOption>
           </Select>

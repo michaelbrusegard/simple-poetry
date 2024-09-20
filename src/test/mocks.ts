@@ -214,3 +214,146 @@ export const poemSpringAndWinterIi = [
     linecount: '18',
   },
 ]
+
+export const poemsShakespeareLove = [
+  {
+    title: "A Lover's Complaint",
+    author: 'William Shakespeare',
+    linecount: '331',
+  },
+  {
+    title: "Sonnet 10: For shame! deny that thou bear'st love to any",
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 26: Lord of my love, to whom in vassalage',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 4: Unthrifty loveliness, why dost thou spend',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 13: O! that you were your self; but, love you are',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 51: Thus can my love excuse the slow offence',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 63: Against my love shall be as I am now',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: "Sonnet 102: My love is strengthen'd, though more weak in seeming",
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 112: Your love and pity doth the impression fill',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 40: Take all my loves, my love, yea take them all',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 56: Sweet love, renew thy force; be it not said',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 62: Sin of self-love possesseth all mine eye',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 95: How sweet and lovely dost thou make the shame',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: "Sonnet 105: Let not my love be call'd idolatry",
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 124: If my dear love were but the child of state',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 137: Thou blind fool, Love, what dost thou to mine eyes',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 141: In faith I do not love thee with mine eyes',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 132: Thine eyes I love, and they, as pitying me',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 147: My love is as a fever longing still',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 148: O me! what eyes hath Love put in my head',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 154: The little Love-god lying once asleep',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 144: Two loves I have of comfort and despair',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: "Sonnet 145: Those lips that Love's own hand did make",
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 149: Canst thou, O cruel! say I love thee not',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 126: O thou, my lovely boy, who in thy power',
+    author: 'William Shakespeare',
+    linecount: '12',
+  },
+  {
+    title: 'Sonnet 138: When my love swears that she is made of truth',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 142: Love is my sin, and thy dear virtue hate',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+  {
+    title: 'Sonnet 151: Love is too young to know what conscience is',
+    author: 'William Shakespeare',
+    linecount: '14',
+  },
+]
