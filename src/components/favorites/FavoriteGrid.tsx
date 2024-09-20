@@ -13,15 +13,16 @@ function FavoriteGrid() {
     }
   }, [])
 
+  if (favorites.length === 0) {
+    return <p className={styles.errorMessage}>You don't have any favorites</p>
+  }
+
   return (
     <div className={styles.grid}>
-      {favorites.length > 0 ? (
+      {favorites.length > 0 &&
         favorites.map((poem: PoemProps) => (
           <PoemCard key={poem.title} poem={poem} />
-        ))
-      ) : (
-        <p className={styles.errorMessage}>You don't have any favorites.</p>
-      )}
+        ))}
     </div>
   )
 }
