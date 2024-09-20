@@ -36,6 +36,7 @@ export default function HomePage() {
       <header className={styles.header}>
         <div className={styles.groupWrapper}>
           <Select
+            label='Select an author'
             value={selectedAuthor}
             onChange={(e) => setSelectedAuthor(e.target.value)}
           >
@@ -54,6 +55,7 @@ export default function HomePage() {
         </div>
         <div className={styles.groupWrapper}>
           <Select
+            label='Select a view'
             value={selectedView}
             onChange={(e) => setSelectedView(e.target.value)}
           >
