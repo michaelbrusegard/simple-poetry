@@ -1,4 +1,4 @@
-import { screen, act } from '@testing-library/react'
+import { screen, waitFor } from '@testing-library/react'
 import { render } from '../../test/utils'
 import { FavoriteGrid } from './FavoriteGrid'
 
@@ -42,7 +42,7 @@ describe('FavoriteGrid', () => {
 
   it('should match the snapshot', async () => {
     let fragment
-    await act(async () => {
+    await waitFor(() => {
       const { asFragment } = render(<FavoriteGrid />)
       fragment = asFragment()
     })

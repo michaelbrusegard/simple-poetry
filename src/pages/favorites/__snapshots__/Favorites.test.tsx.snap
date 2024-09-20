@@ -1,3 +1,20 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`FavoritesPage tests > should match the snapshot 1`] = `<DocumentFragment />`;
+exports[`FavoritesPage tests > should match the snapshot 1`] = `
+<DocumentFragment>
+  <h1>
+    Favorites
+  </h1>
+  <a
+    class="_button_8ea813 _variantSecondary_8ea813 _sizeDefault_8ea813 _margin_869c60"
+    href="/project1/"
+  >
+    Home
+  </a>
+  <p
+    class="_errorMessage_276d41"
+  >
+    You don't have any favorites.
+  </p>
+</DocumentFragment>
+`;
