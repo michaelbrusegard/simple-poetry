@@ -20,9 +20,7 @@ npm run dev
 
 ## Showcase
 
-
-https://git.ntnu.no/IT2810-H24/T27-Project-1/assets/566/5aa45ec7-ffd2-4b2a-932a-d3a5a17e1f92
-
+<https://git.ntnu.no/IT2810-H24/T27-Project-1/assets/566/5aa45ec7-ffd2-4b2a-932a-d3a5a17e1f92>
 
 ## Documentation and choices
 
@@ -37,7 +35,6 @@ https://git.ntnu.no/IT2810-H24/T27-Project-1/assets/566/5aa45ec7-ffd2-4b2a-932a-
   - Deployment is also setup to run on every push to the main branch, which helps a lot when we find bugs later on and know that the latest version always gets deployed.
 - Setup routing with a home page and a favorites page, and the poems behind `/poem/:author;title` see `src/main.tsx`. Had to put everything behind the base path `/project1` which was annoying.
   - Created fallback ErrorPage and NotFoundPage.
-
 
 ## Requirements checklist
 
