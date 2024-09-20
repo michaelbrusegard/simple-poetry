@@ -1,4 +1,5 @@
 import styles from './Select.module.css'
+import { useId } from 'react'
 
 function ArrowIcon() {
   return (
@@ -22,13 +23,18 @@ function ArrowIcon() {
 
 function Select({
   className,
+  label,
   ...props
-}: React.SelectHTMLAttributes<HTMLSelectElement>) {
+}: { label: string } & React.SelectHTMLAttributes<HTMLSelectElement>) {
+  const id = useId()
   let classConstructor = styles.select
   classConstructor += ' ' + (className || '')
   return (
     <div className={styles.selectParent}>
-      <select className={classConstructor} {...props} />
+      <label htmlFor={id} className={styles.hidden}>
+        {label}
+      </label>
+      <select id={id} className={classConstructor} {...props} />
       <ArrowIcon />
     </div>
   )
