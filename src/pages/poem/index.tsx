@@ -7,7 +7,7 @@ import { Spinner } from '../../components/ui/Spinner'
 export default function PoemPage() {
   const navigate = useNavigate()
   const { poem = '' } = useParams()
-  const poemParts = decodeURIComponent(poem).split(';')
+  const poemParts = poem.split(';')
   const author = poemParts[0]
   const title = poemParts[1]
 
