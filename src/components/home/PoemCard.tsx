@@ -16,7 +16,7 @@ function PoemCard({
   return (
     <Link
       className={styles.link}
-      to={`/poem/${encodeURIComponent(poem.author)};${encodeURIComponent(poem.title)}`}
+      to={`/poem/${poem.author};${poem.title}`}
       {...props}
     >
       <Card className={styles.card}>
