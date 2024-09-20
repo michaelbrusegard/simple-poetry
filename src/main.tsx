@@ -6,6 +6,7 @@ import HomePage from './pages/home'
 import PoemPage from './pages/poem'
 import FavoritesPage from './pages/favorites'
 import NotFoundPage from './pages/not-found'
+import ErrorPage from './pages/error'
 
 const BASE_PATH = '/project1'
 
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
   {
     path: `${BASE_PATH}/`,
     element: <HomePage />,
+    errorElement: <ErrorPage />,
   },
   {
     path: `${BASE_PATH}/poem/:poem`,
