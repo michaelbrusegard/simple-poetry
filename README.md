@@ -18,6 +18,8 @@ Start the development server:
 npm run dev
 ```
 
+## Showcase
+
 ## Documentation and choices
 
 - Every component/page is tested directly or indirectly though it's children. The only thing we have not setup testing for is routing, but we are testing the individual links so it should be covered still.
@@ -53,7 +55,7 @@ npm run dev
 - [x] Use of React state and props
 - [x] Data retrieval from a REST API using TanStack Query
 - [x] Use of HTML Web storage API (localstorage and sessionstorage) or IndexedDB API
-  - we use local storage and session storage.
+  - We use local storage and session storage.
 
 **Development and Testing**
 
