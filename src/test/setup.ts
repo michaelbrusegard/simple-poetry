@@ -44,6 +44,12 @@ export const restHandlers = [
       return HttpResponse.json(poemsShakespeareLove)
     },
   ),
+  http.get(
+    'https://poetrydb.org/author,title/William%20Shakespeare;Ice%20Cream/author,title,linecount',
+    () => {
+      return HttpResponse.json([])
+    },
+  ),
 ]
 
 const server = setupServer(...restHandlers)
