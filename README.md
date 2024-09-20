@@ -20,9 +20,13 @@ npm run dev
 
 ## Showcase
 
+
+https://git.ntnu.no/IT2810-H24/T27-Project-1/assets/566/5aa45ec7-ffd2-4b2a-932a-d3a5a17e1f92
+
+
 ## Documentation and choices
 
-- Every component/page is tested directly or indirectly though it's children. The only thing we have not setup testing for is routing, but we are testing the individual links so it should be covered still.
+- Every component/page is tested directly or indirectly though it's children. The only thing we have not setup testing for is routing, but it should be covered through testing of inividual `href` attributes.
   - We chose to wrap the render component from `@testing-library/react` in a custom render function to avoid having to import the providers for routing and queryClient in every test file. This is also why we are not testing routing directly. See `src/test/utils.tsx` for the custom render function.
   - More info for the individual test files are in the comments in the checklist below.
 - We started with creating our own small and simple UI library in `src/components/ui`. This took a lot of time which was worth it because we reused them everywhere.
@@ -32,6 +36,8 @@ npm run dev
 - We setup GitHub actions for continuous integration to run the linter, formatter and tests on every push and pull request. This did not work until we hosted our own runner on the VM, because NTNU does not host runners, this is also why they all failed running prior to this.
   - Deployment is also setup to run on every push to the main branch, which helps a lot when we find bugs later on and know that the latest version always gets deployed.
 - Setup routing with a home page and a favorites page, and the poems behind `/poem/:author;title` see `src/main.tsx`. Had to put everything behind the base path `/project1` which was annoying.
+  - Created fallback ErrorPage and NotFoundPage.
+
 
 ## Requirements checklist
 
