@@ -21,7 +21,7 @@ function CardTitle({
 }: React.HTMLAttributes<HTMLHeadingElement>) {
   let classConstructor = styles.cardTitle
   classConstructor += ' ' + (className || '')
-  return <h3 className={classConstructor} {...props} />
+  return <h2 className={classConstructor} {...props} />
 }
 
 function CardDescription({
