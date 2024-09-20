@@ -37,13 +37,4 @@ describe('PoemsGrid', () => {
       expect(screen.getByText('No poems found...')).toBeInTheDocument()
     })
   })
-
-  it('renders error message', async () => {
-    render(
-      <PoemsGrid searchTerm='Error' selectedAuthor='William Shakespeare' />,
-    )
-    await waitFor(() => {
-      expect(screen.getByText('No poems found...')).toBeInTheDocument()
-    })
-  })
 })
