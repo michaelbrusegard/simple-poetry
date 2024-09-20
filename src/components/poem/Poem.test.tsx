@@ -1,4 +1,4 @@
-import { waitFor, fireEvent, act } from '@testing-library/react'
+import { waitFor, fireEvent } from '@testing-library/react'
 import { render } from '../../test/utils'
 import { Poem } from './Poem'
 
@@ -50,7 +50,7 @@ describe('Poem', () => {
 
   it('should match the snapshot', async () => {
     let fragment
-    await act(async () => {
+    await waitFor(async () => {
       const { asFragment } = render(
         <Poem
           poemTitle='Spring and Winter ii'

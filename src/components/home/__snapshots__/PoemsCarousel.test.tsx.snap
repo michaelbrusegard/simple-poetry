@@ -1,3 +1,49 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`PoemsCarousel > should match the snapshot 1`] = `<DocumentFragment />`;
+exports[`PoemsCarousel > should match the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="_carousel_276d41"
+  >
+    <button
+      class="_button_8ea813 _variantOutline_8ea813 _sizeIcon_8ea813 _carouselButton_276d41"
+      disabled=""
+    >
+      Prev
+    </button>
+    <a
+      class="_carouselPoem_276d41"
+      href="/project1/poem/William Shakespeare;A Lover's Complaint"
+    >
+      <div
+        class="_card_204ad1 _card_871016"
+      >
+        <div
+          class="_cardHeader_204ad1 "
+        >
+          <h2
+            class="_cardTitle_204ad1 "
+          >
+            A Lover's Complaint
+          </h2>
+        </div>
+        <div
+          class="_cardContent_204ad1 "
+        >
+          William Shakespeare
+        </div>
+        <div
+          class="_cardFooter_204ad1 "
+        >
+          331 lines
+        </div>
+      </div>
+    </a>
+    <button
+      class="_button_8ea813 _variantOutline_8ea813 _sizeIcon_8ea813 _carouselButton_276d41"
+    >
+      Next
+    </button>
+  </div>
+</DocumentFragment>
+`;
