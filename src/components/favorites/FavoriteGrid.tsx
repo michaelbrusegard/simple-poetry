@@ -14,7 +14,7 @@ function FavoriteGrid() {
   }, [])
 
   if (favorites.length === 0) {
-    return <p className={styles.errorMessage}>You don't have any favorites</p>
+    return <p className={styles.errorMessage}>You don't have any favorites.</p>
   }
 
   return (
