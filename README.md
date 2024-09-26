@@ -35,6 +35,7 @@ npm run dev
   - Deployment is also setup to run on every push to the main branch, which helps a lot when we find bugs later on and know that the latest version always gets deployed.
 - Setup routing with a home page and a favorites page, and the poems behind `/poem/:author;title` see `src/main.tsx`. Had to put everything behind the base path `/project1` which was annoying.
   - Created fallback ErrorPage and NotFoundPage.
+  - The project1 prefix has been removed now that I uploaded the project to GitHub.
 
 ## Requirements checklist
 

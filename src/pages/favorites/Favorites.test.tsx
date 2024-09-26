@@ -10,7 +10,7 @@ describe('FavoritesPage tests', () => {
 
   it('should render the link component correctly', () => {
     render(<FavoritesPage />)
-    expect(screen.getByText('Home')).toHaveAttribute('href', '/project1/')
+    expect(screen.getByText('Home')).toHaveAttribute('href', '/')
   })
 
   it('should match the snapshot', async () => {

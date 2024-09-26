@@ -28,7 +28,7 @@ describe('PoemCard', () => {
 
     expect(screen.getByRole('link')).toHaveAttribute(
       'href',
-      '/project1/poem/William Blake;The Chimney Sweeper',
+      '/poem/William Blake;The Chimney Sweeper',
     )
   })
 })

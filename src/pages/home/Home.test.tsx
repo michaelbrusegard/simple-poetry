@@ -31,10 +31,7 @@ describe('Home tests', () => {
 
   it('should render the link component correctly', async () => {
     render(<HomePage />)
-    expect(screen.getByText('Favorites')).toHaveAttribute(
-      'href',
-      '/project1/favorites',
-    )
+    expect(screen.getByText('Favorites')).toHaveAttribute('href', '/favorites')
   })
 
   it('should update sessionStorage when state changes', async () => {

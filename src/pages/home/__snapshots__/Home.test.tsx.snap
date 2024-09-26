@@ -128,7 +128,7 @@ exports[`Home tests > should match the snapshot 1`] = `
       </div>
       <a
         class="_button_8ea813 _variantDefault_8ea813 _sizeDefault_8ea813 "
-        href="/project1/favorites"
+        href="/favorites"
       >
         Favorites
       </a>
@@ -139,7 +139,7 @@ exports[`Home tests > should match the snapshot 1`] = `
   >
     <a
       class="_link_871016"
-      href="/project1/poem/William Shakespeare;A Lover's Complaint"
+      href="/poem/William Shakespeare;A Lover's Complaint"
     >
       <div
         class="_card_204ad1 _card_871016"
@@ -167,7 +167,7 @@ exports[`Home tests > should match the snapshot 1`] = `
     </a>
     <a
       class="_link_871016"
-      href="/project1/poem/William Shakespeare;Spring and Winter ii"
+      href="/poem/William Shakespeare;Spring and Winter ii"
     >
       <div
         class="_card_204ad1 _card_871016"
@@ -195,7 +195,7 @@ exports[`Home tests > should match the snapshot 1`] = `
     </a>
     <a
       class="_link_871016"
-      href="/project1/poem/William Shakespeare;Orpheus with his Lute Made Trees"
+      href="/poem/William Shakespeare;Orpheus with his Lute Made Trees"
     >
       <div
         class="_card_204ad1 _card_871016"
@@ -223,7 +223,7 @@ exports[`Home tests > should match the snapshot 1`] = `
     </a>
     <a
       class="_link_871016"
-      href="/project1/poem/William Shakespeare;Winter"
+      href="/poem/William Shakespeare;Winter"
     >
       <div
         class="_card_204ad1 _card_871016"
@@ -251,7 +251,7 @@ exports[`Home tests > should match the snapshot 1`] = `
     </a>
     <a
       class="_link_871016"
-      href="/project1/poem/William Shakespeare;Spring"
+      href="/poem/William Shakespeare;Spring"
     >
       <div
         class="_card_204ad1 _card_871016"
@@ -279,7 +279,7 @@ exports[`Home tests > should match the snapshot 1`] = `
     </a>
     <a
       class="_link_871016"
-      href="/project1/poem/William Shakespeare;Spring and Winter i"
+      href="/poem/William Shakespeare;Spring and Winter i"
     >
       <div
         class="_card_204ad1 _card_871016"
@@ -307,7 +307,7 @@ exports[`Home tests > should match the snapshot 1`] = `
     </a>
     <a
       class="_link_871016"
-      href="/project1/poem/William Shakespeare;Blow, Blow, Thou Winter Wind"
+      href="/poem/William Shakespeare;Blow, Blow, Thou Winter Wind"
     >
       <div
         class="_card_204ad1 _card_871016"
@@ -335,7 +335,7 @@ exports[`Home tests > should match the snapshot 1`] = `
     </a>
     <a
       class="_link_871016"
-      href="/project1/poem/William Shakespeare;Under the Greenwood Tree"
+      href="/poem/William Shakespeare;Under the Greenwood Tree"
     >
       <div
         class="_card_204ad1 _card_871016"
@@ -363,7 +363,7 @@ exports[`Home tests > should match the snapshot 1`] = `
     </a>
     <a
       class="_link_871016"
-      href="/project1/poem/William Shakespeare;Sonnet 3: Look in thy glass and tell the face thou viewest"
+      href="/poem/William Shakespeare;Sonnet 3: Look in thy glass and tell the face thou viewest"
     >
       <div
         class="_card_204ad1 _card_871016"
@@ -391,7 +391,7 @@ exports[`Home tests > should match the snapshot 1`] = `
     </a>
     <a
       class="_link_871016"
-      href="/project1/poem/William Shakespeare;Sonnet 7: Lo! in the orient when the gracious light"
+      href="/poem/William Shakespeare;Sonnet 7: Lo! in the orient when the gracious light"
     >
       <div
         class="_card_204ad1 _card_871016"
@@ -419,7 +419,7 @@ exports[`Home tests > should match the snapshot 1`] = `
     </a>
     <a
       class="_link_871016"
-      href="/project1/poem/William Shakespeare;Sonnet 8: Music to hear, why hear'st thou music sadly"
+      href="/poem/William Shakespeare;Sonnet 8: Music to hear, why hear'st thou music sadly"
     >
       <div
         class="_card_204ad1 _card_871016"
@@ -447,7 +447,7 @@ exports[`Home tests > should match the snapshot 1`] = `
     </a>
     <a
       class="_link_871016"
-      href="/project1/poem/William Shakespeare;Sonnet 10: For shame! deny that thou bear'st love to any"
+      href="/poem/William Shakespeare;Sonnet 10: For shame! deny that thou bear'st love to any"
     >
       <div
         class="_card_204ad1 _card_871016"

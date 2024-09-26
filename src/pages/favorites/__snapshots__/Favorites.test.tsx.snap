@@ -7,7 +7,7 @@ exports[`FavoritesPage tests > should match the snapshot 1`] = `
   </h1>
   <a
     class="_button_8ea813 _variantSecondary_8ea813 _sizeDefault_8ea813 _margin_869c60"
-    href="/project1/"
+    href="/"
   >
     Home
   </a>

@@ -13,7 +13,7 @@ exports[`PoemsCarousel > should match the snapshot 1`] = `
     </button>
     <a
       class="_carouselPoem_276d41"
-      href="/project1/poem/William Shakespeare;A Lover's Complaint"
+      href="/poem/William Shakespeare;A Lover's Complaint"
     >
       <div
         class="_card_204ad1 _card_871016"
