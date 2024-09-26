@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from '../ui/Card'
 import { PoemProps } from '../../types'
-import { Link } from '../../router'
+import { Link } from 'react-router-dom'
 
 function PoemCard({
   poem,

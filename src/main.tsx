@@ -8,26 +8,24 @@ import FavoritesPage from './pages/favorites'
 import NotFoundPage from './pages/not-found'
 import ErrorPage from './pages/error'
 
-const BASE_PATH = '/project1'
-
 const queryClient = new QueryClient()
 
 const router = createBrowserRouter([
   {
-    path: `${BASE_PATH}/`,
+    path: '/',
     element: <HomePage />,
     errorElement: <ErrorPage />,
   },
   {
-    path: `${BASE_PATH}/poem/:poem`,
+    path: '/poem/:poem',
     element: <PoemPage />,
   },
   {
-    path: `${BASE_PATH}/favorites`,
+    path: '/favorites',
     element: <FavoritesPage />,
   },
   {
-    path: `${BASE_PATH}/*`,
+    path: '/*',
     element: <NotFoundPage />,
   },
 ])

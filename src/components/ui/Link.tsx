@@ -1,6 +1,6 @@
 import styles from './Button.module.css'
 import { LinkProps } from 'react-router-dom'
-import { Link as RouterLink } from '../../router'
+import { Link as RouterLink } from 'react-router-dom'
 
 function Link({
   className,
