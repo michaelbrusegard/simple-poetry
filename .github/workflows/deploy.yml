@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Executing remote SSH commands using SSH key
-        uses: appleboy/ssh-action@1.0.3
+        uses: appleboy/ssh-action@v1.0.3
         with:
           username: ${{ secrets.ESPRESSO_USERNAME }}
           host: ${{ secrets.ESPRESSO_HOST }}
