@@ -6,7 +6,7 @@ async function fetchPoems(searchTerm: string, selectedAuthor: string) {
     )
   } else {
     response = await fetch(
-      `https://poetrydb.org/author,poemcount/${selectedAuthor};12/author,title,linecount`,
+      `https://poetrydb.org/author,poemcount/${selectedAuthor};32/author,title,linecount`,
     )
   }
   return response.json()

@@ -15,13 +15,13 @@ expect.extend(matchers)
 
 export const restHandlers = [
   http.get(
-    'https://poetrydb.org/author,poemcount/Emily%20Dickinson;12/author,title,linecount',
+    'https://poetrydb.org/author,poemcount/Emily%20Dickinson;32/author,title,linecount',
     () => {
       return HttpResponse.json(poemsDickinson)
     },
   ),
   http.get(
-    'https://poetrydb.org/author,poemcount/William%20Shakespeare;12/author,title,linecount',
+    'https://poetrydb.org/author,poemcount/William%20Shakespeare;32/author,title,linecount',
     () => {
       return HttpResponse.json(poemsShakespeare)
     },
